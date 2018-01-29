@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Firebase Web Basics</title>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+    </head>
+    <body>
+        <div class="mainDiv" align="right">
+            <h1 align="left">Firebase Web App</h1>
+            <textarea ID="mainText" placeholder="Enter text here ..."></textarea>
+            <button id="submitBtn" onclick="submitClick()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+        </div>
+
+
+        
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCaQyCGkTlHQTH_yKnMxLUxRx8oWWUG6aM",
+            authDomain: "firetest-813e9.firebaseapp.com",
+            databaseURL: "https://firetest-813e9.firebaseio.com",
+            projectId: "firetest-813e9",
+            storageBucket: "firetest-813e9.appspot.com",
+            messagingSenderId: "1032015561085"
+        };
+        firebase.initializeApp(config);
+        </script>
+
+        <script src="index.js"></script>
+    </body>
+</html>
